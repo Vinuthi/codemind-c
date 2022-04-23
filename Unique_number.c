@@ -1,4 +1,5 @@
-#include<stdio.h>
+#include <stdio.h>
+
 int main(){
     int n, i, digit;
     static int arr[10];
@@ -19,4 +20,4 @@ int main(){
     }
     return 0;
   
- } 
+ }
