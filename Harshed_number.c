@@ -1,27 +1,19 @@
 #include<stdio.h>
-
- 
 int main()
 {
-    int number,original_number,sum=0;
-    int digit;
- 
-    
-    scanf("%d",&original_number);
- 
-    number=original_number;//copying the original number
- 
-    while(number!=0)
+    int a,s=0,i,t;
+    scanf("%d",&a);
+    t=a;
+    while(a!=0)
     {
-        digit=number%10;
-        sum+=digit;
-        number=number/10;
+        i=a%10;
+        s+=i;
+        a/=10;
     }
- 
-    if(original_number%sum==0)
-        printf("True");
+    if(t%s==0)
+    printf("True");
     else
-        printf("False");
- 
+    printf("False");
+    
     return 0;
 }
