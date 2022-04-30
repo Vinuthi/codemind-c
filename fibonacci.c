@@ -1,15 +1,16 @@
-#include <stdio.h>
-int main() 
+#include<stdio.h>
+int main()
 {
-  int i, n, t1 = 0, t2 = 1, nextTerm;
-  
-  scanf("%d", &n);
-  
-  for (i = 1; i <= n; ++i) {
-    printf("%d ",t1);
-    nextTerm = t1 + t2;
-    t1 = t2;
-    t2 = nextTerm;
-  }
-  return 0;
+    int n,i,t1=0,t2=1;
+    int nextterm=t1+t2;
+    scanf("%d",&n);
+    printf("%d %d",t1,t2);
+    for(i=3;i<=n;i++)
+    {
+        printf(" %d",nextterm);
+        t1=t2;
+        t2=nextterm;
+        nextterm=t1+t2;
+    }
+    return 0;
 }
